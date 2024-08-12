@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+
+  <!-- Thẻ meta SEO -->
+  {%- seo -%}
+
+  <!-- Thêm Open Graph Meta Tags -->
+  <meta property="og:title" content="Yêu nhầm chị hai, được nhầm em gái" />
+  <meta property="og:description" content="{{ page.excerpt | strip_html | escape }}" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/YNCHDNEG/YNCHDNEG.github.io/main/assets/images/banners/demo_baner_01.png" />
+  <meta property="og:url" content="https://ynchdneg.github.io/" />
+  <meta property="og:type" content="website" />
+
+
+  <!-- Các thẻ liên kết và stylesheet -->
+  <link rel="icon" href="https://github.com/YNCHDNEG/YNCHDNEG.github.io/blob/main/assets/images/icon/relationship.png?raw=true">
+  <link rel="canonical" href="{{ site.url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  
+  {%- feed_meta -%}
+
+  <!-- Thẻ Google Analytics nếu chạy trong môi trường production -->
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include extensions/google-analytics.html -%}
+  {%- endif -%}
+
+  <!-- Các tiện ích mở rộng -->
+  {%- include extensions/code-highlight.html -%}
+  {%- include extensions/photo-swipe.html -%}
+
+  <!-- Thẻ tùy chỉnh -->
+  {%- include custom-head.html -%}
+</head>
